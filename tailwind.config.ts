@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         background: "rgba(var(--background))",
+        foreground: "rgba(var(--foreground))",
         "background-slate": "rgba(var(--background-slate))",
         primary: "rgba(var(--primary))",
         accent: "rgba(var(--accent))",

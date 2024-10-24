@@ -4,6 +4,7 @@
 
 :root {
   --background: 255, 255, 255;
+  --foreground: 0, 0, 0;
   --background-slate: 208, 211, 227;
   --primary: 0, 213, 99;
   --accent: 229, 251, 239;
@@ -12,6 +13,7 @@
 
 [data-theme="dark"] {
   --background: 18, 18, 18;
+  --foreground: 255, 255, 255;
   --background-slate: 28, 28, 35;
   --primary: 0, 150, 70;
   --accent: 34, 47, 40;
