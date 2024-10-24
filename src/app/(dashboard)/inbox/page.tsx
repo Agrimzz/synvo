@@ -7,7 +7,7 @@ import React from "react"
 const Inbox = () => {
   return (
     <div className="w-[400px] bg-background py-2 px-4 overflow-y-scroll">
-      <h2 className="text-2xl text-foreground font-semibold pb-4 border-gray-200 border-b-2">
+      <h2 className="text-2xl text-foreground font-semibold pb-4 border-foreground/10 border-b-2">
         Inbox
       </h2>
       <SearchInput />

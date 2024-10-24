@@ -22,7 +22,7 @@ const Navbar = () => {
     </div>
   ))
   return (
-    <div className="flex flex-col justify-between items-center px-4 py-2 border-gray-200 border-r-2">
+    <div className="flex flex-col justify-between items-center px-4 py-2 border-foreground/10 border-r-2">
       <div className="hidden md:flex">
         <h2 className="text-3xl text-primary font-bold">SY</h2>
       </div>

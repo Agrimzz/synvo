@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+:root[data-theme="light"] {
   --background: 255, 255, 255;
   --foreground: 0, 0, 0;
   --background-slate: 208, 211, 227;
@@ -11,7 +11,7 @@
   background: rgba(var(--background), 1);
 }
 
-[data-theme="dark"] {
+:root[data-theme="dark"] {
   --background: 18, 18, 18;
   --foreground: 255, 255, 255;
   --background-slate: 28, 28, 35;
@@ -22,16 +22,29 @@
   scrollbar-color: var(--accent) var(--background);
   scrollbar-width: thin;
 }
-/* WebKit Scrollbar for Chrome, Safari, etc. */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: 18, 18, 18;
+    --foreground: 255, 255, 255;
+    --background-slate: 28, 28, 35;
+    --primary: 0, 150, 70;
+    --accent: 34, 47, 40;
+    background: rgba(var(--background), 1);
+    scrollbar-color: var(--accent) var(--background);
+    scrollbar-width: thin;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(var(--background), 1); /* Track color */
+  background: rgba(var(--background), 1);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(var(--accent), 1); /* Scrollbar color */
+  background-color: rgba(var(--accent), 1);
   border-radius: 10px;
 }
