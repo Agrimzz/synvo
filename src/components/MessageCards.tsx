@@ -3,7 +3,7 @@ import { formatTime, truncateText } from "@/utils"
 import Image from "next/image"
 import React from "react"
 
-const MessageCards = ({ items }: MessageItem) => {
+const MessageCards = ({ items }: { items: MessageItem }) => {
   return (
     <div className="bg-background p-2 flex justify-between items-center hover:bg-gray-200 rounded-lg">
       <div className="flex items-center gap-3">

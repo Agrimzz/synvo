@@ -1,4 +1,4 @@
-export interface MessageItem {
+export type MessageItem = {
   id: number
   name: string
   avatar: string

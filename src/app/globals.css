@@ -18,4 +18,20 @@
   --primary: 0, 150, 70;
   --accent: 34, 47, 40;
   background: rgba(var(--background), 1);
+
+  scrollbar-color: var(--accent) var(--background);
+  scrollbar-width: thin;
+}
+/* WebKit Scrollbar for Chrome, Safari, etc. */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(var(--background), 1); /* Track color */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(var(--accent), 1); /* Scrollbar color */
+  border-radius: 10px;
 }
