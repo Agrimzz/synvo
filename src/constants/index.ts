@@ -87,7 +87,88 @@ export const messageCards = [
     id: 10,
     name: "Ava Thompson",
     avatar: "https://randomuser.me/api/portraits/women/7.jpg",
-    time: "2024-10-24 12:10:00",
+    time: "2024-10-24 9:10:00",
     lastMessage: "Let's grab lunch tomorrow.",
   },
 ]
+
+export const conversation = {
+  conversation_id: 1,
+  is_group: false,
+  conversation_name: "Chat with John Doe",
+  created_at: "2024-10-24 14:30:00",
+  created_by: 1,
+  participants: [
+    {
+      participant_id: 1,
+      user_id: 1,
+      username: "John Doe",
+      profile_picture_url: "https://randomuser.me/api/portraits/men/1.jpg",
+      joined_at: "2024-10-24 14:30:00",
+    },
+    {
+      participant_id: 2,
+      user_id: 0,
+      username: "You",
+      profile_picture_url: null,
+      joined_at: "2024-10-24 14:30:00",
+    },
+  ],
+  messages: [
+    {
+      message_id: 1,
+      message_text: "Hey! How are you?",
+      sent_at: "2024-10-24 14:30:00",
+      sender: {
+        user_id: 1,
+        avatar: "https://randomuser.me/api/portraits/men/1.jpg",
+        username: "John Doe",
+      },
+      media_file: null,
+    },
+    {
+      message_id: 2,
+      message_text: "I'm doing great! How about you?",
+      sent_at: "2024-10-24 14:32:00",
+      sender: {
+        user_id: 0,
+        avatar: "https://randomuser.me/api/portraits/men/1.jpg",
+        username: "You",
+      },
+      media_file: null,
+    },
+    {
+      message_id: 3,
+      message_text: "Glad to hear! Just working on a new project.",
+      sent_at: "2024-10-24 14:34:00",
+      sender: {
+        user_id: 1,
+        avatar: "https://randomuser.me/api/portraits/men/1.jpg",
+        username: "John Doe",
+      },
+      media_file: null,
+    },
+    {
+      message_id: 4,
+      message_text: "Sounds exciting! Need any help?",
+      sent_at: "2024-10-24 14:35:00",
+      sender: {
+        user_id: 0,
+        avatar: "https://randomuser.me/api/portraits/men/1.jpg",
+        username: "You",
+      },
+      media_file: null,
+    },
+    {
+      message_id: 5,
+      message_text: "I might take you up on that! I'll keep you posted.",
+      sent_at: "2024-10-24 14:37:00",
+      sender: {
+        user_id: 1,
+        avatar: "https://randomuser.me/api/portraits/men/1.jpg",
+        username: "John Doe",
+      },
+      media_file: null,
+    },
+  ],
+}

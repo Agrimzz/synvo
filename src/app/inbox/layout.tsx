@@ -26,9 +26,9 @@ export default function DashboardLayout({
   }
 
   return (
-    <div className="w-full h-screen bg-background flex py-4">
+    <div className="w-full h-screen bg-background flex ">
       <Navbar setActiveTab={setActiveTab} activeTab={activeTab} />
-      <div className="w-[400px] bg-background py-2 px-4 overflow-y-scroll">
+      <div className="w-[400px] bg-background  px-4 overflow-y-scroll pt-6">
         {renderTab()}
       </div>
       {children}

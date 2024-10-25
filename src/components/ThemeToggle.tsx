@@ -1,4 +1,4 @@
-"use client" // Required for client-side only code in Next.js
+"use client"
 
 import { IconMoon, IconSun } from "@tabler/icons-react"
 import React, { useEffect, useState } from "react"
@@ -32,8 +32,6 @@ const ThemeToggle = () => {
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"))
   }
-
-  if (!theme) return null
 
   return (
     <button

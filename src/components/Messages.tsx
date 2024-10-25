@@ -7,7 +7,7 @@ import React from "react"
 const Messages = () => {
   return (
     <div>
-      <h2 className="text-2xl text-foreground font-semibold pb-4 border-foreground/10 border-b-2">
+      <h2 className="text-2xl text-foreground font-semibold py-7 border-foreground/10 border-b-2">
         Messages
       </h2>
       <SearchInput />
