@@ -1,7 +1,7 @@
 import React from "react"
 
 const Call = () => {
-  return <div className="text-foreground">Call</div>
+  return <div>Call</div>
 }
 
 export default Call

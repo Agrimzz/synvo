@@ -1,7 +1,7 @@
 import React from "react"
 
 const People = () => {
-  return <div className="text-foreground">People</div>
+  return <div>People</div>
 }
 
 export default People

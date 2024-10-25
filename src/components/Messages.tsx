@@ -4,11 +4,11 @@ import { messageCards } from "@/constants"
 import { IconPlus } from "@tabler/icons-react"
 import React from "react"
 
-const Inbox = () => {
+const Messages = () => {
   return (
-    <div className="w-[400px] bg-background py-2 px-4 overflow-y-scroll">
+    <div>
       <h2 className="text-2xl text-foreground font-semibold pb-4 border-foreground/10 border-b-2">
-        Inbox
+        Messages
       </h2>
       <SearchInput />
 
@@ -28,4 +28,4 @@ const Inbox = () => {
   )
 }
 
-export default Inbox
+export default Messages
